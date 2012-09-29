@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<jdbc-data-source xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/ns/weblogic/weblogic-jdbc.xsd" xmlns="http://www.bea.com/ns/weblogic/jdbc-data-source">
+    <name>rbe1</name>
+    <jdbc-driver-params>
+        <url>jdbc:oracle:thin:@//localhost:1521/rbe1.bensmann.com</url>
+        <driver-name>oracle.jdbc.OracleDriver</driver-name>
+        <properties>
+            <property>
+                <name>user</name>
+                <value>rbe</value>
+            </property>
+            <property>
+                <name>servername</name>
+                <value>localhost</value>
+            </property>
+            <property>
+                <name>portnumber</name>
+                <value>1521</value>
+            </property>
+            <property>
+                <name>sid</name>
+            </property>
+        </properties>
+        <password-encrypted>4182915AFFAA0C2BE7C1775B064E8A4C</password-encrypted>
+    </jdbc-driver-params>
+    <jdbc-connection-pool-params>
+        <test-table-name>dual</test-table-name>
+    </jdbc-connection-pool-params>
+    <jdbc-data-source-params>
+        <jndi-name>jdbc/rbe1DS</jndi-name>
+        <scope>Application</scope>
+    </jdbc-data-source-params>
+</jdbc-data-source>

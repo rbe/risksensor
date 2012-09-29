@@ -1,0 +1,8 @@
+-- Alle Ereignisse über 8 Sekunden raus
+-- Pro Tag, Woche, Monat, Quartal, Jahr
+-- Punktekonto abbauen
+-- Übertretungen nach x Minuten schlimmer bewerten m+bx m=Steigung b= x=Minuten
+-- Übertretungen der Schwellwerte bis 50% normal (Fahrer achtet auf Hinweise), >50% schlimmer bewerten
+-- Pluspunkt wenn erstes Ereignis nach Zündung an nicht 7 ist
+-- | a+bx+cx²  x=relative Überschreitung, a negativ=-0.5
+-- !!! Import Daten: Tabellen + PKs, DISTINCT bei View !!!

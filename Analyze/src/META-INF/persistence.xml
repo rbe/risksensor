@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+  <persistence-unit name="Risksensor" transaction-type="RESOURCE_LOCAL">
+    <provider>
+      org.eclipse.persistence.jpa.PersistenceProvider
+    </provider>
+    <jta-data-source>
+      java:/app/jdbc/jdbc/rbe1DS
+    </jta-data-source>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsCmd
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsData
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsEvent
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsEventfactor
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsLpn
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsSdcard
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsThreshold
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsTour
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsTourData
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsTourState
+    </class>
+    <class>
+      de.prozesscontrol.risksensor.analyze.entity.TRsTourLog
+    </class>
+    <exclude-unlisted-classes/>
+    <properties>
+      <property name="eclipselink.target-server" value="None"/>
+      <property name="eclipselink.jdbc.driver"
+                value="oracle.jdbc.OracleDriver"/>
+      <property name="eclipselink.jdbc.password" value="rbe"/>
+      <property name="eclipselink.jdbc.url"
+                value="jdbc:oracle:thin:@//localhost:1521/rbe1.bensmann.com"/>
+      <property name="eclipselink.jdbc.user" value="rbe"/>
+      <property name="javax.persistence.jtaDataSource"
+                value="java:/app/jdbc/jdbc/rbe1DS"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+      <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+    </properties>
+  </persistence-unit>
+</persistence>
